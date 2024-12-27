@@ -176,7 +176,7 @@ export default function ServicePage({ params }: { params: { id: string } }) {
 
 	return (
 		<>
-			<Card className="mb-12">
+			<Card className="mb-12 border-none">
 				<CardHeader>
 					<CardTitle className="text-3xl">{service.title}</CardTitle>
 				</CardHeader>
@@ -197,7 +197,7 @@ export default function ServicePage({ params }: { params: { id: string } }) {
 				{service.showcase.map((project, index) => (
 					<Card
 						key={index}
-						className="overflow-hidden bg-white dark:bg-gray-800"
+						className="overflow-hidden bg-white dark:bg-gray-800 border-none"
 					>
 						<Image
 							src={project.image}

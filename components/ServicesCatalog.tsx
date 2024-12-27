@@ -59,7 +59,7 @@ export default function ServicesCatalog() {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{services.map((service) => (
 						<Link href={`/services/${service.id}`} key={service.id}>
-							<Card className="bg-white dark:bg-gray-700 hover:shadow-lg transition-shadow duration-300">
+							<Card className="bg-white dark:bg-gray-700 hover:shadow-lg transition-shadow duration-300 border-none overflow-hidden">
 								<Image
 									src={service.showcaseImage}
 									alt={`${service.title} showcase`}
